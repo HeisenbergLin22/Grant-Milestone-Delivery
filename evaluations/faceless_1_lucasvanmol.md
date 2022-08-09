@@ -24,11 +24,18 @@
 
 I think the documentation in the README is great; it's clear and I had no issues executing the commands outlined in it. However, I have some issues with the documentation inside the code. 
 - Firstly, because most documentation code was `ignore`'d, running `cargo test` failed to catch some mistakes that were present in the documentation. I've gone ahead and took the liberty of fixing this myself in this [pull request](https://github.com/HeisenbergLin22/Faceless_milestone1/pull/1), which you can go ahead and merge if you agree with my changes.
+
+### Response: Already merged your PR. Thanks for your comments.  
+
 - The documentation inside `faceless-substrate-node/pallets`:  the comments in the code here, for `faceless` and `proof-of-existance` are just generic example comments from the `template` pallet, you should update them to reflect what the pallet is doing. 
+
+### Response: Please check our [repo](https://github.com/HeisenbergLin22/Faceless_milestone1) for the updated comments. We have also removed the `proof-of-existance` code given the fact that it is irrelevant. Thanks for your comments.
 
 ### Github best practices
 
 Since it seems like the repository was uploaded to github especially for this milestone delivery, this may not be a problem if the files are also hosted privately elsewhere, but if development is going to continue on the github repo then I would suggest the following changes:
+
+### Response: Thanks for your comments, but this repo is indeed purely for the purpose of milestone delivery.  
 
 - Add a `.gitignore` file to ignore build artifacts
 - If the `bn` and `bulletproof` only have small tweaks to the original repo, I would suggest creating a seperate repo for them, where they have been forked from their original repo. If needed, they can be included in the original module using submodules
